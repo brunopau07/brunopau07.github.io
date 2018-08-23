@@ -6,130 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>Gamer World: Tú tienda preferida de juegos</title>
     <meta name="viewport" content="width=device-width,  intial-scale=1">
-    <link rel="stylesheet" href="styles/estilo-final.css">
+    <link rel="stylesheet" href="styles/games-style.css">
     <script src="scripts/script-final.js"></script>
 </head>
 
 <body>
-    <nav>
-        <h1>Gamer
-            <img src="img/gamermundo.jpg" width="170px" height="90px"> World
+    <nav class="nav">
+        <h1 class="header-title">
+            Gamer
+            <span></span>World
         </h1>
-        <table>
-            <tr>
-                <th>
-                    <a href="cod.html">Call of Duty WWII </a>
-                </th>
-                <th>
-                    <a href="nba.html">NBA 2K19</a>
-                </th>
-                <th>
-                    <a href="nfs.html">Need For Speed: Rivals</a>
-                </th>
-                <th>
-                    <a href="formula.html">F1 2018</a>
-                </th>
-                <th>
-                    <a href="god.html">God of War</a>
-                </th>
-                <th>
-                    <a href="index.html">HOME</a>
-                </th>    
-            </tr>
-        </table>
+        <img id="header-logo" src="img/gamermundo.jpg" alt="Gamer World: Tu tienda preferida" width="175px" height="90px">
         <br>
-
-        <h3>
-            <a href="pagina2.html">Registrate</a>
-
+        <ul>
+            <li>
+                <a href="fifa.html">Fifa 19</a>
+                <a href="cod.html">Call of Duty WWII</a>
+                <a href="nba.html">NBA 2K19</a>
+                <a href="nfs.html">Need For Speed: Rivals</a>
+                <a href="formula.html">F1 2018</a>
+                <a href="god.html">God of War</a>
+                <h3>
+                    <a href="pagina2.html">Registrate</a>
+                </h3>
+            </li>
+        </ul>
     </nav>
-
     <main>
-        <h1>GAMER WORLD</h1>
-        <img src="img/fifa.jpg" width="250" height="200">
-        <h2>Fifa 19</h2>
-        <p>Categoria: Deportes</p>
-
-        <h5>Descripción:</h5>
-        <p> El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar
-            textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede
-            leer. </p>
-        <p>Valoracion: 8.9/10</p>
-        <p>Precio: 28.99 USD (Debes estar registrado para realizar la compra)</p>
-        <p>Otras Imagenes:</p>
-        <img src="img/fifa-1.jpg" width="320" height="180">
-        <img src="img/fifa-2.jpg" width="320" height="180">
-        <img src="img/fifa-3.jpg" width="320" height="180">
-        <img src="img/fifa-4.jpg" width="320" height="180">
-
-        <br>
-
-        <div>
+        <div class="left-side">
+            <h1>GAMER WORLD</h1>
+            <img src="img/fifa.jpg" alt="Fifa 19" width="300" height="280">
+            <h2>Fifa 19</h2>
+            <dl>
+                <dt>Categoria:</dt>
+                <dd>Deportes</dd>
+                <dt>
+                    Descripción:
+                </dt>
+                <dd>
+                    FIFA 19 es un videojuego de simulación de fútbol desarrollado por EA Vancouver y EA Rumania, como parte de la serie FIFA
+                    de Electronic Arts, adéntrate en el juego de fútbol realista más vendido con las ligas e equipos más importantes
+                    de todo el mundo.
+                </dd>
+                <dt>Puntuacion:</dt>
+                <dd>8.9/10</dd>
+                <dt>Precio:</dt>
+                <dd> 48.99 USD (Debes estar registrado para realizar la compra)</dd>
+            </dl>
+            <p>Otras Imagenes:</p>
+            <img src="img/fifa-1.jpg" width="320" height="180" alt="Fifa 19">
+            <img src="img/fifa-2.jpg" width="320" height="180" alt="Fifa 19">
+            <br>
+            <img src="img/fifa-3.jpg" width="320" height="180" alt="Fifa 19">
+            <img src="img/fifa-4.jpg" width="320" height="180" alt="Fifa 19">
+            <br>
             <form action="comprar.html">
-                <input type="submit" value="Comprar 28.99 USD">
+                <input type="submit" value="Comprar 48.99 USD">
             </form>
         </div>
-
+        <aside class="aside">
+            <h3 class="categorias">Categorias:</h3>
+            <ul>
+                <li>Acción</li>
+                <li>Conducción</li>
+                <li>Deportes</li>
+            </ul>
+            <div class="separador"></div>
+            <h3>Dejanos tu opinión</h3>
+            <form action="comentario.html">
+                <div>
+                    <label for="campo1">E-mail:</label>
+                    <input size="20" placeholder="Ingrese su E-mail" type="email" id="email" name="email" required>
+                    <br>
+                    <label for="campo2">Nombre:</label>
+                    <input size="20" placeholder="Ingrese su Nombre" type="text" id="nombre" name="nombre" maxlength="25">
+                    <br>
+                    <label for="campo3">Comentario:</label>
+                    <br>
+                    <textarea cols="35" rows="15" id="comentario" placeholder="Escriba aquí" name="comentario" maxlength="400" required></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </aside>
     </main>
-
-    <aside>
-
-        <h3>Categorias:</h3>
-        <ul>
-            <li>Acción</li>
-            <li>Conducción</li>
-            <li>Deportes</li>
-        </ul>
-
-
-        <h3>Dejanos tu opinión</h3>
-        <form action="comentario.html">
-            <div>
-                <label for="campo1">E-mail:</label>
-                <input size="20" placeholder="Ingrese su E-mail" type="email" id="email" name="email" required>
-            </div>
-
-            <br>
-
-            <div>
-                <label for="campo2">Nombre:</label>
-                <input size="20" placeholder="Ingrese su Nombre" type="text" id="nombre" name="nombre" maxlength="25">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="campo3">Comentario:</label>
-                <br>
-                <textarea cols="35" rows="15" id="comentario" placeholder="Escriba aquí" name="comentario" maxlength="400" required></textarea>
-            </div>
-
-            <br>
-
-            <div>
-                <input type="submit" value="Enviar">
-        </form>
-        </div>
-    </aside>
-
     <br>
-
-    <footer>
+    <footer class="footer">
         <div>
             <h5>Contáctanos</h5>
-            </p>
-        </div>
-
-        <div>
             <p>TEL: 095302712</p>
-        </div>
-        <div>
             <p>E-mail: gamerw14@gmail.com</p>
-        </div>
-        <div>
             <p>Facebook: Gamer World</p>
-        </div>
-        <div>
             <p>Instagram: @worldgamer14</p>
         </div>
     </footer>

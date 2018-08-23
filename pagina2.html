@@ -6,21 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>Gamer World: Tú tienda preferida de juegos</title>
     <meta name="viewport" content="width=device-width,  intial-scale=1">
-    <link rel="stylesheet" href="styles/estilo-final.css">
+    <link rel="stylesheet" href="styles/style-second.css">
     <script src="scripts/script-final.js"></script>
 </head>
+<nav class="nav">
+    <h1 class="header-title">
+        Gamer
+        <span></span>World
+    </h1>
+    <img id="header-logo" src="img/gamermundo.jpg" alt="Gamer World: Tu tienda preferida" width="175px" height="90px">
+</nav>
 
 <body>
-    <article>
-        <h1>Gamer
-            <img style="margin: 30px;" src="img/gamermundo.jpg" width="170px" height="90px">World</h1>
+    <main>
+        <br>
         <div>
             <form action="registrado.html">
                 <label for="campo1">Nombre:</label>
                 <br>
                 <input size="35" placeholder="Ingrese su nombre..." maxlength="30" type="text" id="campo1" name="nombre" required>
         </div>
-
         <div>
             <label for="campo2">Apellido:</label>
             <br>
@@ -30,37 +35,27 @@
         <br>
         <input size="35" type="email" placeholder="Ingrese E-mail..." id="campo3" name="email" required>
         </div>
-
         <div>
             <label for="campo4">Contraseña:</label>
             <br>
-            <input size="40" placeholder="Obligatoria una Mayúscula, minuscula y un número" minlength="8" maxlength="24" type="password" id="campo4" name="contraseña"
-                required pattern="[A-Za-z0-9]+">
+            <input size="40" placeholder="Obligatoria una Mayúscula, minuscula y un número" minlength="8" maxlength="24" type="password"
+                id="campo4" name="contraseña" required pattern="[A-Za-z0-9]+">
         </div>
-
         <div>
             <label for="campo5">Repetir Contraseña:</label>
             <br>
             <input size="40" placeholder="Ingrese Contraseña Nuevamente..." minlength="8" maxlength="24" type="password" id="campo5"
                 name="contraseña" required pattern="[A-Za-z0-9]+">
         </div>
-
-
         <br>
-
         <div>
             <input type="submit" value="Registrarse">
         </div>
-        </form>
-
-        <br>
-
-        <div>
-            <p>
-                <a href="index.html">Volver a la página principal</a>
-            </p>
-        </div>
-
+    </form>    
+    </main>
 </body>
+<footer>
+    <a href="index.html">Volver a la página principal</a>   
+</footer>
 
 </html>
