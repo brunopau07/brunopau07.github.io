@@ -29,7 +29,6 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 2px solid black;
     margin: 0;
-
 }
 .footer div p{
     color: lightblue;
@@ -45,11 +44,8 @@ body{
     font-size: 25px;
 }
 .aside {
-    text-align: right;
-    max-width: 20%;
+    width: 20%;
     float: right;
-    padding-right: 40px; 
-    padding-top: 90px;
 }
 .nav {
     border: 2px solid black;
@@ -72,8 +68,9 @@ body{
     font-size: 40px;
 }
 .left-side{
-    max-width: 70%;
+    width: 70%;
     display: inline-block;
+
 }
 .left-side  p{
     background-color: transparent;
@@ -82,7 +79,7 @@ body{
 }
 #header-logo{
     display: block;
-    margin: -100px 580px auto auto;
+    margin: -100px auto auto auto;
 }
 .header-title span{
     display: inline-block;
@@ -163,18 +160,22 @@ body{
     color: black;
     background-color: white;
 }
-@media screen and (max-width: 500px){
-    .nav{
-        width: 500px;
-    }
-    .footer{
-        width: 500px;
-    }
+@media screen and (max-width: 600px){
     .aside{
-        width: 100px;
+        width: 90%;
+        float: none;
+        padding-left: 30px;
     }
     .left-side{
-        width: 400px;
+        width: 90%;
+        text-align: center;
+        padding-left: 30px;
     }
-
+    .mas-vendido{
+        padding: 0;
+        text-align: center;    
+    }
+    .separador{
+        height: 50px;
+    }
 }

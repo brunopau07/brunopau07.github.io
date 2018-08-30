@@ -19,7 +19,7 @@ body{
 }    
 #header-logo{
     display: block;
-    margin: -100px 585px auto auto;
+    margin: -100px auto auto auto;
 }
 main label{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

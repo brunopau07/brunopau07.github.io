@@ -78,7 +78,7 @@ body{
 
 #header-logo{
     display: block;
-    margin: -100px 580px auto auto;
+    margin: -100px auto auto auto;
 }
 
 .header-title span{
