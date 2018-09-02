@@ -66,6 +66,7 @@ body{
 .left-side{ 
     width: 70%;
     display: inline-block;
+    padding-left: 10px;
 }
 
 .left-side  p{
@@ -163,6 +164,9 @@ body{
 .aside textarea:hover{
     color: black;
     background-color: white;
+}
+.img-inicial{
+    padding-left: 34%;
 }
 @media screen and (max-width: 600px){
     .aside{
