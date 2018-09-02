@@ -168,7 +168,7 @@ body{
 .img-inicial{
     padding-left: 34%;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 850px){
     .aside{
         width: 90%;
         float: none;
