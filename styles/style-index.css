@@ -160,7 +160,7 @@ body{
     color: black;
     background-color: white;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 850px){
     .aside{
         width: 90%;
         float: none;
