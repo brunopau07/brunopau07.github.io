@@ -46,6 +46,8 @@ body{
 .aside {
     width: 20%;
     float: right;
+    padding-right: 20px;
+    text-align: left; 
 }
 .nav {
     border: 2px solid black;
@@ -66,10 +68,12 @@ body{
 .nav h1{
     padding-top: 25px;
     font-size: 40px;
+    text-align: center;
 }
 .left-side{
-    width: 70%;
+    width: 60%;
     display: inline-block;
+    padding-left: 10px;
 
 }
 .left-side  p{
@@ -81,7 +85,7 @@ body{
     display: block;
     margin: -100px auto auto auto;
 }
-.header-title span{
+#title-span{
     display: inline-block;
     width: 190px;
 }
@@ -100,7 +104,7 @@ body{
     text-align: center;
 }
 .aside h3{
-    font-size: 30px;
+    font-size: 20px;
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -108,7 +112,6 @@ body{
     padding-top: 70px;
 } 
 .separador{
-    width: 20%;
     height: 100px;
 }
 .left-side img{
@@ -132,10 +135,10 @@ body{
 }
 .aside input{
     text-decoration: none;
-    max-width: 250px;
-    max-height: 30px;
+    width: 200px;
+    height: 20px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     color: lightblue;
@@ -155,12 +158,15 @@ body{
     background-color: rgb(72, 72, 72);
     border-radius: 7px;
     border: 2px solid black;
+    width: 200px;
+    height: 140px;
+    margin: 10px;
 }
 .aside textarea:hover{
     color: black;
     background-color: white;
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1100px){
     .aside{
         width: 90%;
         float: none;
@@ -177,5 +183,14 @@ body{
     }
     .separador{
         height: 50px;
+    }
+    #header-logo{
+        width: 140px;
+        height: 75px;
+
+    }
+    #title-span{
+        display: inline-block;
+        width: 160px;
     }
 }
