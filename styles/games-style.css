@@ -80,6 +80,10 @@ body{
     margin: -100px auto auto auto;
 }
 
+#title-span{
+    display: inline-block;
+    width: 210px;
+}
 .header-title span{
     display: inline-block;
     width: 190px;
@@ -197,11 +201,14 @@ body{
     #header-logo{
         width: 120px;
         height: 65px;
-
     }
     #title-span{
         display: inline-block;
-        width: 140px;
+        width: 150px;
+    }
+    .left-side img{
+        width: 150px;
+        height: 120px;
     }
 }
 @media screen and (max-width: 450px){
@@ -292,7 +299,7 @@ body{
     }
     .aside input{
         text-decoration: none;
-        width: 45%;
+        width: 50%;
         height: 18px;
         margin: 5px;
         font-size: 12px;
@@ -326,6 +333,15 @@ body{
     }
     #title-span{
         display: inline-block;
-        width: 110px;
+        width: 120px;
+    }
+    .left-side img{
+        width: 100px;
+        height: 100px;
+    }
+    .boton-compra{
+        width: 200px;
+        height: 25px;
+        font-size: 15px;
     }
 }
