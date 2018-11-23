@@ -88,7 +88,7 @@ body{
     padding: 5px;
     font-size: 22px;
 } 
-.left-side h1{
+.tituloInicio{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
@@ -115,13 +115,6 @@ body{
     margin: auto;
     padding-left: 20px; 
     padding-top: 20px;
-}
-.mas-vendido{
-    color: black;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    padding-left: 46%;   
 }
 .aside li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -163,6 +156,58 @@ body{
     color: black;
     background-color: white;
 }
+.ItemJuego{
+    /* float: left; */
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+} 
+.ItemJuego a{
+    text-decoration: none;
+}
+.ItemJuego p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: black;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+ #img-long :hover{
+    width: 220px;
+    height: 250px;
+}
+#img-width :hover{
+    width: 270px;
+    height: 220px;
+}
+#search{
+    width: 300px;
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid lightblue;
+}
+.mas-vendido{
+    text-decoration: none;
+}
+.mas-vendido p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    padding-left: 46%;
+}
+.mas-vendido img:hover{
+    width: 23%;
+    height: 13%;
+}
 @media screen and (max-width: 1100px){
     .nav a{
         font-size: 15px;
@@ -192,6 +237,22 @@ body{
     #title-span{
         display: inline-block;
         width: 160px;
+    }
+    .ItemJuego img{
+        width: 140px;
+        height: 140px;
+    }
+    .ItemJuego p{
+        font-size: 15px;
+    }
+     #img-long :hover{
+        width: 150px;
+        height: 180px;
+    }
+     
+    #img-width :hover{
+        width: 200px;
+        height: 150px;
     }
 }
 @media (max-width: 450px){
@@ -320,5 +381,21 @@ body{
     }
     p{
         font-size: 10px;   
+    }
+    #search{
+        width: 150px;
+        height: 15px;
+        margin: 5px;
+        padding: 2px;
+        font-size: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid lightblue;
+    }
+    #juegoBusc{
+        font-size: 10px;
     }
 }

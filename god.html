@@ -7,7 +7,26 @@
     <title>Gamer World: Tú tienda preferida de juegos</title>
     <meta name="viewport" content="width=device-width,  initial-scale=1">
     <link rel="stylesheet" href="styles/games-style.css">
-    <script src="scripts/script-final.js"></script>
+    <script src="scripts/mi_script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var titulo = document.getElementById("juego-titulo");
+            titulo.innerHTML = juegos[5].nombre;
+
+            var categoria = document.getElementById("juego-categoria");
+            categoria.innerHTML = juegos[5].categoria;
+
+            var descripcion = document.getElementById("juego-descripcion");
+            descripcion.innerHTML = juegos[5].descripcion;
+
+            var valoracion = document.getElementById("juego-valoracion");
+            valoracion.innerHTML = juegos[5].valoracion;
+
+            var precio = document.getElementById("juego-precio");
+            precio.innerHTML = juegos[5].precio;
+        });
+    </script>
 </head>
 
 <body>
@@ -20,14 +39,17 @@
         <br>
         <ul>
             <li>
+                <a href="index.html">Menú Principal</a>
+            </li>
+            <br>
+            <li>
                 <a href="fifa.html">Fifa 19</a>
                 <a href="cod.html">Call of Duty WWII</a>
                 <a href="nba.html">NBA 2K19</a>
                 <a href="nfs.html">Need For Speed: Rivals</a>
                 <a href="formula.html">F1 2018</a>
-                <a href="god.html">God of War</a>
                 <h3>
-                    <a href="pagina2.html">Registrate</a>
+                    <a href="login.html">Registrate</a>
                 </h3>
             </li>
         </ul>
@@ -35,21 +57,17 @@
     <main>
         <div class="left-side">
             <h1>GAMER WORLD</h1>
-            <img class="img-inicial" src="img/god.jpg" alt="God of War" width="300" height="300">
-            <h2>God of War</h2>
+            <img class="img-inicial" src="img/god.jpg" id="juego-portada" alt="God of War" width="300" height="300">
+            <h2 id="juego-titulo"></h2>
             <dl>
-                <dt>Categoria: </dt>
-                <dd>Acción</dd>
-                <dt>Descripción</dt>
-                <dd>Basado en las aventuras de un semidiós espartano, Kratos, quién se enfrenta a diversos personajes de la mitología
-                    griega, tanto héroes (Heracles, Teseo, Perseo, etc.) y especies mitológicas (tales como gorgonas, arpías,
-                    o minotauros) como dioses griegos (Ares, Poseidón, Zeus, entre otros), titanes (como Cronos) y dioses
-                    primordiales (como Gaia). Aunque el guerrero espartano acostumbra enemistad con la mayoría de los Dioses,
-                    recibe ayuda de muchos de ellos, en especial de Atenea.</dd>
+                <dt>Categoria:</dt>
+                <dd id="juego-categoria"></dd>
+                <dt>Descripción:</dt>
+                <dd id="juego-descripcion"></dd>
                 <dt>Valoracion:</dt>
-                <dd>9.6/10</dd>
+                <dd id="juego-valoracion"></dd>
                 <dt>Precio:</dt>
-                <dd>44.99 USD (Debes estar registrado para realizar la compra)</dd>
+                <dd id="juego-precio"></dd>
             </dl>
             <p>Otras Imagenes:</p>
             <img class="img-secundarias" src="img/god-4.jpg" width="320" height="180" alt="God of War">
@@ -62,12 +80,6 @@
             </form>
         </div>
         <aside class="aside">
-            <h3 class="categorias">Categorias:</h3>
-            <ul>
-                <li>Acción</li>
-                <li>Conducción</li>
-                <li>Deportes</li>
-            </ul>
             <div class="separador"></div>
             <h3>Dejanos tu opinión</h3>
             <form action="comentario.html">

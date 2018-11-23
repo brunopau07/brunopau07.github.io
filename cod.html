@@ -7,7 +7,27 @@
     <title>Gamer World: Tú tienda preferida de juegos</title>
     <meta name="viewport" content="width=device-width,  initial-scale=1">
     <link rel="stylesheet" href="styles/games-style.css">
-    <script src="scripts/script-final.js"></script>
+    <script src="scripts/mi_script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            var titulo = document.getElementById("juego-titulo");
+            titulo.innerHTML = juegos[4].nombre;
+
+            var categoria = document.getElementById("juego-categoria");
+            categoria.innerHTML = juegos[4].categoria;
+
+            var descripcion = document.getElementById("juego-descripcion");
+            descripcion.innerHTML = juegos[4].descripcion;
+
+            var valoracion = document.getElementById("juego-valoracion");
+            valoracion.innerHTML = juegos[4].valoracion;
+
+            var precio = document.getElementById("juego-precio");
+            precio.innerHTML = juegos[4].precio;
+        });
+    </script>
 </head>
 
 <body>
@@ -20,14 +40,17 @@
         <br>
         <ul>
             <li>
+                <a href="index.html">Menú Principal</a>
+            </li>
+            <br>
+            <li>
                 <a href="fifa.html">Fifa 19</a>
-                <a href="cod.html">Call of Duty WWII</a>
                 <a href="nba.html">NBA 2K19</a>
                 <a href="nfs.html">Need For Speed: Rivals</a>
                 <a href="formula.html">F1 2018</a>
                 <a href="god.html">God of War</a>
                 <h3>
-                    <a href="pagina2.html">Registrate</a>
+                    <a href="login.html">Registrate</a>
                 </h3>
             </li>
         </ul>
@@ -35,18 +58,17 @@
     <main>
         <div class="left-side">
             <h1>GAMER WORLD</h1>
-            <img class="img-inicial" src="img/cod.jpg" alt="COD WW2" width="400" height="200">
-            <h2>Call of Duty WW II</h2>
+            <img class="img-inicial" src="img/cod.jpg" id="juego-portada" alt="COD WW2" width="400" height="200">
+            <h2 id="juego-titulo"></h2>
             <dl>
                 <dt>Categoria:</dt>
-                <dd>Acción</dd>
+                <dd id="juego-categoria"></dd>
                 <dt>Descripción:</dt>
-                <dd> Call of Duty: World War 2 es un videojuego de disparos en primera persona basado en la Segunda Guerra Mundial
-                    desarrollado por Sledgehammer Games, distribuido por Activision.</dd>
+                <dd id="juego-descripcion"></dd>
                 <dt>Valoracion:</dt>
-                <dd>8.6/10</dd>
+                <dd id="juego-valoracion"></dd>
                 <dt>Precio:</dt>
-                <dd>40.99 USD (Debes estar registrado para realizar la compra)</dd>
+                <dd id="juego-precio"></dd>
             </dl>
             <p>Otras Imagenes:</p>
             <img class="img-secundarias" src="img/cod-1.jpg" width="320" height="180" alt="COD WW2">
@@ -59,12 +81,6 @@
             </form>
         </div>
         <aside class="aside">
-            <h3 class="categorias">Categorias:</h3>
-            <ul>
-                <li>Acción</li>
-                <li>Conducción</li>
-                <li>Deportes</li>
-            </ul>
             <div class="separador"></div>
             <h3>Dejanos tu opinión</h3>
             <form action="comentario.html">

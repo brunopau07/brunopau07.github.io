@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gamer World: Tú tienda preferida de juegos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style-second.css">
+    <script src="scripts/script-compra.js"></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <h1 class="header-title">
+            Gamer
+            <span id="title-span"></span>World
+        </h1>
+        <a href="index.html">
+            <img id="header-logo" src="img/gamermundo.jpg" alt="Gamer World: Tu tienda preferida" width="165px" height="80px">
+        </a>
+    </nav>
+    <main class="carro">
+        <h1>FIFA 19</h1>
+        <img class="img-inicial" id="juego-portada" src="img/fifa.jpg" alt="Fifa 19" width="300" height="280">
+        <h3>Orden de compra</h3>
+        <form class="compra" action="comprar.html">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input placeholder="Ingrese Nombre completo" id="nom-compra" type="text" required>
+                <br>
+                <label for="correo">E-mail:</label>
+                <input placeholder="Ingrese E-mail" id="mail-compra" type="email" required>
+            </div>
+            <div>
+                <label for="cantidad">Unidades:</label>
+                <input placeholder="1" id="unid" type="number" min="1" max="10" value="1" required>
+            </div>
+            <br>
+            <div>
+                <label for="tipo-juego">Forma de compra de juego:</label>
+                <input type="radio" id="digi" name="forma" value="digital" checked>Digital
+                <input type="radio" id="cd" name="forma" value="cd">CD/DVD
+            </div>
+            <br>
+            <div id="lugarEntrega">
+                <label for="entrega">Lugar de entrega:</label>
+                <input placeholder="Ingrese direccion " type="text" required>
+                <input placeholder="N° de puerta del domicilio" type="text" required>
+            </div>
+            <br>
+            <div id="modoEnvio">
+                <label for="forma-entrega">Metodo de envio:</label>
+                <select class="pago" id="modoCelda">
+                    <option id="normal" value="normal" selected>Común (+20 dias)</option>
+                    <option id="especial" value="especial">Especial (Entre 10-20 dias)</option>
+                    <option id="premium" value="premium">Premium (2-5 dias)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="pagar" id="pago">Forma de pago:</label>
+                <input type="radio" name="pagar" id="efec" value="efectivo" checked>Efectivo
+                <input type="radio" name="pagar" id="credi" value="credito">Tarjeta de Crédito
+            </div>
+            <div id="tarjeta">
+                <label for="tarjeta">N° de Tarjeta</label>
+                <input placeholder="Ingrese número de su Tarjeta de Credito" type="text" required>
+            </div>
+            <br>
+            <div>
+                <label for="subtotal">Sub-Total:
+                    <span id="subT"></span>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="total">Total (Impuestos incluídos):
+                    <span id="total-imp-incl"></span>
+                </label>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Confirmar">
+            </div>
+        </form>
+    </main>
+    <br>
+    <footer>
+        <a href="index.html">Volver a la página principal</a>
+    </footer>
+</body>
+
+</html>

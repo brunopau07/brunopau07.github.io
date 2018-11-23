@@ -17,64 +17,91 @@
             <span id="title-span"></span>World
         </h1>
         <img id="header-logo" src="img/gamermundo.jpg" alt="Gamer World: Tu tienda preferida" width="175px" height="90px">
-        <br>
-
         <ul>
             <li>
-                <a href="fifa.html">Fifa 19</a>
-
-                <a href="cod.html">Call of Duty WWII</a>
-
-                <a href="nba.html">NBA 2K19</a>
-
-                <a href="nfs.html">Need For Speed: Rivals</a>
-
-                <a href="formula.html">F1 2018</a>
-
-                <a href="god.html">God of War</a>
-
                 <h3>
-                    <a href="pagina2.html">Registrate</a>
+                    <a href="login.html">Registrate</a>
+                </h3>
+            </li>
+            <li>
+                <h3 id="juegoBusc">Buscar Juegos:
+                    <!--<input id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="0" type="text"
+                        spellcheck="false" placeholder="Buscar" aria-label="Buscar" aria-haspopup="false" role="combobox" aria-autocomplete="list"
+                        dir="ltr" class="ytd-searchbox" style="outline: none;">
+                    -->
+                    <input type="text" name="buscador" id="search" onkeyup="filtrar()" placeholder="Buscar...">
                 </h3>
             </li>
         </ul>
-
-
     </nav>
-
     <main>
+        <div id="listaJuegos">
+            <h1 class="tituloInicio">Gamer World</h1>
+            <ul>
+                <li class="ItemJuego" id="img-long">
+                    <a href="fifa.html">
+                        <img src="img/fifa.jpg" alt="Fifa 19" width="180px" height="200px">
+                        <p>Fifa 19</p>
+                    </a>
+                </li>
+                <li class="ItemJuego" id="img-width">
+                    <a href="cod.html">
+                        <img src="img/cod.jpg" alt="COD WWII" width="220px" height="170px">
+                        <p>Call of Duty WWII</p>
+                    </a>
+                </li>
+                <li class="ItemJuego" id="img-long">
+                    <a href="nba.html">
+                        <img src="img/nba.jpg" alt="NBA 2K19" width="180px" height="200px">
+                        <p>NBA 2K19</p>
+                    </a>
+                </li>
+                <li class="ItemJuego" id="img-width">
+                    <a href="nfs.html">
+                        <img src="img/nfs.jpg" alt="NFS RIVALS" width="220px" height="170px">
+                        <p>Need For Speed: Rivals</p>
+                    </a>
+                </li>
+                <li class="ItemJuego" id="img-width">
+                    <a href="formula.html">
+                        <img src="img/formula.jpg" alt="F1 18" width="220px" height="170px">
+                        <p>F1 2018</p>
+                    </a>
+                </li>
+                <li class="ItemJuego" id="img-long">
+                    <a href="god.html">
+                        <img src="img/god.jpg" alt="God of War" width="180px" height="200px">
+                        <p>God of War</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <br>
         <div class="left-side">
-            <h1>GAMER WORLD</h1>
-            <br>
             <h4>¿Que ofrecemos?</h4>
-            <p> En Gamer World ofrecemos los mejores juegos con una calidad y jugabilidad únicas. Lo último en juegos lo encontraras aquí,
-                tenemos el juego que precises para todas las consolas Xbox One, PlayStation 4, Computadoras, etc. Siempre puedes ver los 
-                juegos disponibles en la Lista de Juegos, si hay algún juego que no encuentres no dudes en contactarte con nosotros te 
-                ayudaremos a encontrarlo o lo conseguiremos para ti.
+            <p> En Gamer World ofrecemos los mejores juegos con una calidad y jugabilidad únicas. Lo último en juegos lo encontraras
+                aquí, tenemos el juego que precises para todas las consolas Xbox One, PlayStation 4, Computadoras, etc. Siempre
+                puedes ver los juegos disponibles en la Lista de Juegos, si hay algún juego que no encuentres no dudes en
+                contactarte con nosotros te ayudaremos a encontrarlo o lo conseguiremos para ti.
             </p>
             <img src="img/main-foto.jpg" alt="logo-secundario" width="60%" height="30%">
             <h4>¿Como funcionamos?</h4>
             <p>
-                Funcionamos de una manera muy simple, en la barra de navegación se encuentra la lista de juegos donde se encontrarán
-                la mayoría de estos y podrás acceder a su página individual con solo clickear en su nombre, podrás encontrar el link
+                Funcionamos de una manera muy simple, en la barra de navegación se encuentra la lista de juegos donde se encontrarán la mayoría
+                de estos y podrás acceder a su página individual con solo clickear en su nombre, podrás encontrar el link
                 para registrarte y formar parte de nuestra comunidad. En el costado derecho de la página encontraras la división
-                de categorías de los juegos que se encuentran disponibles en la página, abajo encontraras la sección de comentarios 
-                donde con tu email podras enviarnos un mensaje o una opinión, si quieres contactarnos de otra forma en el pie de 
-                página puedes ver otras formas para ponerte en contacto con nosotros.
+                de categorías de los juegos que se encuentran disponibles en la página, abajo encontraras la sección de comentarios
+                donde con tu email podras enviarnos un mensaje o una opinión, si quieres contactarnos de otra forma en el
+                pie de página puedes ver otras formas para ponerte en contacto con nosotros.
             </p>
             <h4>Juego más vendido del mes</h4>
             <br>
-            <a class="mas-vendido" href="nba.html">NBA 2K19</a> 
-            <br>
-            <img src="img/nba.jpg" width="20%" height="10%" alt="juego mas vendido">
+            <a class="mas-vendido" href="nba.html">
+                <img src="img/nba.jpg" width="20%" height="10%" alt="juego mas vendido">
+                <p>NBA 2K19</p>
+            </a>
         </div>
         <aside class="aside">
-            <h3 class="categorias">Categorias</h3>
-            <ul>
-                <li>Acción</li>
-                <li>Conducción</li>
-                <li>Deportes</li>
-            </ul>
             <div class="separador"></div>
             <h3>Dejanos tu opinión</h3>
             <form action="comentario.html" id="mensaje">
